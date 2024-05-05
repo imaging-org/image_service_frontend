@@ -1,0 +1,1 @@
+###  An Angular Frontend for the Image service application
