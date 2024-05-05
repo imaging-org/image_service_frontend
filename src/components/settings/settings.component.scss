@@ -1,0 +1,10 @@
+mat-card {
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+mat-card-content {
+    display: grid;
+    grid-template-columns: auto auto 10%;
+}
