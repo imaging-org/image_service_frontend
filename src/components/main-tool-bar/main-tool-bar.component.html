@@ -1,0 +1,19 @@
+<mat-toolbar>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Image Service</span>
+    <span class="spacer"></span>
+    <button mat-button color="secondary" aria-label="Batches Button" [routerLink]="['/batches']" >
+        Batches
+      </button>
+    <button mat-button color="primary" aria-label="Gallery Button" [routerLink]="['/gallery']">
+      Gallery
+    </button>
+    <button mat-button color="primary" aria-label="Similarity Button" [routerLink]="['/similarity']">
+        Similarity
+      </button>
+    <button mat-icon-button class="example-icon" aria-label="Icon-button with settings icon" [routerLink]="['/settings']">
+      <mat-icon>settings</mat-icon>
+    </button>
+  </mat-toolbar>
