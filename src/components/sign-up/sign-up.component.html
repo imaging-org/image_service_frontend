@@ -1,0 +1,21 @@
+<form [formGroup]="signUpForm" (ngSubmit)="onSubmit()" class="sign_up_container">
+    <mat-form-field appearance="outline" class="user_name_field">
+        <mat-label>Enter User Name</mat-label>
+        <input matInput placeholder="user name" formControlName="username">
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="pwd_field">
+        <mat-label>Enter Password</mat-label>
+        <input matInput placeholder="password" formControlName="password" type="password">
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="re_pwd_field">
+        <mat-label>Re-enter Password</mat-label>
+        <input matInput placeholder="password" formControlName="reEnterPassword" type="password">
+        <mat-error>{{errorMessage}}</mat-error>
+      </mat-form-field>
+      <button mat-flat-button class="sign_up_btn" color="primary" type="submit">SIGN UP</button>
+      <div class="sign_in_container">
+        <span class="sign_in_text">Already have an account?</span>
+        <button mat-button color="warn" class="sign_in_btn" [routerLink]="['/signin']" >Sign In</button>
+      </div>
+</form>
+
